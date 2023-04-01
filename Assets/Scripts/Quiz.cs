@@ -22,11 +22,11 @@ public class Quiz : MonoBehaviour
 
     [Header("Timer")]
     [SerializeField] Image timerImage;
-    Timer timer;
+    [SerializeField] Timer timer;
 
     [Header("Scoring")]
     [SerializeField] TextMeshProUGUI scoreText;
-    ScoreKeeper scoreKeeper;
+    [SerializeField] ScoreKeeper scoreKeeper;
 
     [Header("ProgressBar")]
     [SerializeField] Slider progressBar;
@@ -35,8 +35,6 @@ public class Quiz : MonoBehaviour
 
     void Awake()
     {
-        timer = FindObjectOfType<Timer>();
-        scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 0;
     }
