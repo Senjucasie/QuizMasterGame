@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 namespace QuizGame.UI
 {
     public class Timer : MonoBehaviour
@@ -44,8 +43,4 @@ namespace QuizGame.UI
             _updateTimer = true;
         }
     }
-
-
-
-   
 }

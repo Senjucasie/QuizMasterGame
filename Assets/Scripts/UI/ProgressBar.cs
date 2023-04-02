@@ -1,24 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBar : MonoBehaviour
+namespace QuizGame.UI
 {
-    [SerializeField] private Slider _questionSlider;
-
-    private void Awake()
+    public class ProgressBar : MonoBehaviour
     {
-    _questionSlider = GetComponent<Slider>();
-    }
+        [SerializeField] private Slider _questionSlider;
 
-    private void UpdateProgressBar(float questionnumber)
-    {
-        _questionSlider.value = questionnumber;
-    }
+        private void Awake()
+        {
+            _questionSlider = GetComponent<Slider>();
+        }
 
-    private void ResetProgressBar()
-    {
-        _questionSlider.value = 0;
+        private void UpdateProgressBar(float questionnumber)
+        {
+            _questionSlider.value = questionnumber;
+        }
+
+        private void ResetProgressBar()
+        {
+            _questionSlider.value = 0;
+        }
     }
 }
