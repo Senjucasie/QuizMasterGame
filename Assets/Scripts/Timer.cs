@@ -1,56 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] float timeToCompleteQuestion = 30f;
-    [SerializeField] float timeToShowCorrectAnswer = 10f;
+    float fillFraction;
 
-    public bool loadNextQuestion;
-    public float fillFraction;
-    public bool isAnsweringQuestion;
-    
-    float timerValue;
+    private bool _updateTimer = false;
+
+    [SerializeField] private float _currentQuestionTime,_remainingTime;
+    [SerializeField] private Image _timerImage;
+
+    private const int _defaultFillValue = 1;
 
     void Update()
     {
-        UpdateTimer();
+        if (_updateTimer)
+            UpdateTimer();
     }
 
-    public void CancelTimer()
-    {
-        timerValue = 0;
-    }
+    private void StopTimer() => _updateTimer = false;
+    
 
-    void UpdateTimer()
+    private void UpdateTimer()
     {
-        timerValue -= Time.deltaTime;
-
-        if(isAnsweringQuestion)
+        _remainingTime -= Time.deltaTime;
+        if(_remainingTime > 0)
         {
-            if(timerValue > 0)
-            {
-                fillFraction = timerValue / timeToCompleteQuestion;
-            }
-            else
-            {
-                isAnsweringQuestion = false;
-                timerValue = timeToShowCorrectAnswer;
-            }
+            fillFraction = _remainingTime / _currentQuestionTime;
+            _timerImage.fillAmount = fillFraction;
         }
         else
         {
-            if(timerValue > 0)
-            {
-                fillFraction = timerValue / timeToShowCorrectAnswer;
-            }
-            else
-            {
-                isAnsweringQuestion = true;
-                timerValue = timeToCompleteQuestion;
-                loadNextQuestion = true;
-            }
+            StopTimer();
         }
+       
     }
+
+    private void StartTimer(float timeforquestion)
+    {
+        _currentQuestionTime = _remainingTime = timeforquestion;
+        _timerImage.fillAmount = _defaultFillValue;
+        _updateTimer = true;
+    }
+
+
+   
 }

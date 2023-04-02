@@ -1372,6 +1372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnswerButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1243060626571098160, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -1560,7 +1564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e9e91703892b444b7f89d50962fe85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _questionSO: {fileID: 0}
+  _questionSO: {fileID: 11400000, guid: fe3aa893e9fe13242806931b64e8c60d, type: 2}
 --- !u!1 &738050525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,7 +1811,9 @@ MonoBehaviour:
   defaultAnswerSprite: {fileID: 21300000, guid: d53d205cfcfe69946acfae662645a44d, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: db0e7bf384af41445a6d4134c2d754d0, type: 3}
   timerImage: {fileID: 1976546}
+  timer: {fileID: 1516967621}
   scoreText: {fileID: 211141332}
+  scoreKeeper: {fileID: 566556984}
   progressBar: {fileID: 1309022587}
   isComplete: 0
 --- !u!1 &894361939 stripped

@@ -13,15 +13,40 @@ MonoBehaviour:
   m_Name: UnityQuestion
   m_EditorClassIdentifier: 
   QuestionList:
-  - _question: 
-    _answerOptions: []
+  - _question: What is the correct syntax for creating a new integer variable with
+      an inital value of 12?
+    _answerOptions:
+    - int num = 12;
+    - Int num = "12";
+    - Int num = 12;
+    - Int num = "12";
     correctAnswerIndex: 0
-  - _question: 
-    _answerOptions: []
-    correctAnswerIndex: 0
-  - _question: 
-    _answerOptions: []
-    correctAnswerIndex: 0
-  - _question: 
-    _answerOptions: []
-    correctAnswerIndex: 0
+  - _question: If all other conditions are false, which conditional statement would
+      you use as a catch all?
+    _answerOptions:
+    - if
+    - else if
+    - else
+    - when
+    correctAnswerIndex: 2
+  - _question: Which two words can be used interchangably?
+    _answerOptions:
+    - Blueprint & Function
+    - Blueprint & Method
+    - Function & Instance
+    - Blueprint & Method
+    correctAnswerIndex: 3
+  - _question: What are we doing when we "call a method"?
+    _answerOptions:
+    - Naming our methods properly
+    - Telling the code inside a method to execute
+    - Returning a value form another place in code
+    - Phoning our actor friend
+    correctAnswerIndex: 1
+  - _question: A variable can be thought of as what?
+    _answerOptions:
+    - Data that goes inside a box
+    - A box that can contain data
+    - Data that can't be changed
+    - Data that can only be used once
+    correctAnswerIndex: 1
