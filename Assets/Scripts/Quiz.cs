@@ -12,6 +12,7 @@ public class Quiz : MonoBehaviour
     QuestionSO currentQuestion;
 
     [Header("Answers")]
+
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
     bool hasAnsweredEarly = true;
@@ -22,7 +23,7 @@ public class Quiz : MonoBehaviour
 
     [Header("Timer")]
     [SerializeField] Image timerImage;
-    [SerializeField] Timer timer;
+    //[SerializeField] Timer timer;
 
     [Header("Scoring")]
     [SerializeField] TextMeshProUGUI scoreText;
@@ -41,33 +42,33 @@ public class Quiz : MonoBehaviour
 
     void Update()
     {
-        timerImage.fillAmount = timer.fillFraction;
-        if (timer.loadNextQuestion)
-        {
-            if (progressBar.value == progressBar.maxValue)
-            {
-                isComplete = true;
-                return;
-            }
+        //timerImage.fillAmount = timer.fillFraction;
+        //if (timer.loadNextQuestion)
+        //{
+        //    if (progressBar.value == progressBar.maxValue )
+        //    {
+        //        isComplete = true;
+        //        return;
+        //    }
 
-            hasAnsweredEarly = false;
-            GetNextQuestion();
-            timer.loadNextQuestion = false;
-        }
-        else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
-        {
-            DisplayAnswer(-1);
-            SetButtonState(false);
-        }
+        //    hasAnsweredEarly = false;
+        //    GetNextQuestion();
+        //    timer.loadNextQuestion = false;
+        //}
+        //else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
+        //{
+        //    DisplayAnswer(-1);
+        //    SetButtonState(false);
+        //}
     }
 
     public void OnAnswerSelected(int index)
     {
-        hasAnsweredEarly = true;
-        DisplayAnswer(index);
-        SetButtonState(false);
-        timer.CancelTimer();
-        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
+        //hasAnsweredEarly = true;
+        //DisplayAnswer(index);
+        //SetButtonState(false);
+        //timer.CancelTimer();
+        //scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
     }
 
     void DisplayAnswer(int index)

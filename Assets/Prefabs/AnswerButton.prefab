@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9062467172803830928}
   - component: {fileID: 5753628788959527451}
   - component: {fileID: 1743060516911499068}
+  - component: {fileID: 783117468400779814}
   m_Layer: 5
   m_Name: AnswerButton
   m_TagString: Untagged
@@ -29,6 +30,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7050486379558984225}
   m_Father: {fileID: 0}
@@ -121,6 +123,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &783117468400779814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243060626571098160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66038d5d7543c74fba4495225e68aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2063533205729200401
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +163,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6845422395503454487}
   m_RootOrder: 0

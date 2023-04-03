@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace QuizGame.UI
 {
-    public class ProgressBar : MonoBehaviour
+    public class ProgressBarUI : MonoBehaviour
     {
         [SerializeField] private Slider _questionSlider;
 

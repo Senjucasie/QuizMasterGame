@@ -166,7 +166,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.628
+  m_FillAmount: 1
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -2680,6 +2680,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 791542309}
@@ -2688,11 +2692,19 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnAnswerSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Quiz, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Quiz, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1743060516911499068, guid: 61d6c72b6ab282e4691cdb59123e8697, type: 3}

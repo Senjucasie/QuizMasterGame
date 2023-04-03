@@ -1,0 +1,16 @@
+{
+    "name": "QuizGamePlayAssembly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:17d00b44cbc89814f928da947668f3f0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
